@@ -1,2 +1,16 @@
 # My-portfolio
-second week challenge, make a portfolio webpage.
+
+
+##Description
+
+
+
+##Screenshot
+
+
+
+##describ the other project I worked on
+
+
+
+##technology I used
