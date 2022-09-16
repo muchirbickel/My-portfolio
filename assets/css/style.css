@@ -1,0 +1,13 @@
+:root {
+    background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.float-right {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    width: 300px;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+
+}
