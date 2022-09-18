@@ -1,61 +1,86 @@
 :root {
+  box-sizing: border-box;
+  margin: 0px;
+  padding:0px;
   background-size: 80%;
+  background-color: rgb(41, 87, 19);
+  background-image: url(../images/meadow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }
 
 body {
-  font-family:system-ui;
-  margin:0;
-  background-color: rgb(191, 247, 227);
-  background-image: url(../images/meadow.jpg);
-  background-repeat: no-repeat; 
-  background-size: cover;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: small;
 }
 
-.container {
-display: flex;
-justify-content: space-between;
-}
-
-.header {
-  /* Turns this element into a flexbox */
+.hero {
+  color: rgb(19, 53, 3);
   display: flex;
-  /* Forces elements to the next line if they don't fit */
-  flex-wrap: wrap;
-  margin-top: 2%;
-}
-
-.nav-item {
-    display:inline;
-    justify-content: space-evenly;
-    /* Defines how to distribute the empty space between child elements */
-    padding: 10px;
-    background: #fabbec;
-    color: rgb(241, 237, 237);
-    
+  justify-content: flex-start;
+  margin-left: 15%;
 }
 
 .head-img {
- justify-content: flex-end;
+  display: block;
+  float: right;
+  margin-right: 15%;
+  margin-top: 10%;
   width: 300px;
-  border-radius: 4px;
-  border: 1px solid blueviolet;
+  border-radius: 30%;
+  border: 2px solid rgb(76, 90, 76);
+}
+
+.nav {
+  display: block;
+  margin-left: 20%;
+  font-family:fantasy;
+  font-size: large;
+  color:antiquewhite
+}
+
+.nav-item {
+ flex-wrap: wrap;
+ display: inline-block;
+ justify-content: space-evenly;
+  padding: 10px;
+  background: rgb(41, 87, 19);;
+  color: rgb(8, 7, 7);
+}
+
+.nav-item:hover {
+  background-color: rgb(42, 134, 81);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.section {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding:15%;
+}
+
+p {
+  background-color: aliceblue;
+  opacity: 30%;
+  font-size: 20px;
 }
 
 
-
-h1 {
-  color: rgb(8, 70, 49);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
 @media screen and (max-width: 992px) {
   header {
-    background:rgb(8, 70, 49);
+    background: rgb(15, 192, 103);
+    opacity: inherit;
   }
 }
 
 @media screen and (max-width: 768px) {
   nav {
-    background-color:rgb(8, 70, 49);
+    background-color: rgb(15, 192, 103);
+    opacity: inherit;
   }
 }
