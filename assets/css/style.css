@@ -29,8 +29,8 @@ body {
 .head-img {
   display: block;
   float: right;
-  margin-right: 15%;
-  margin-top: -100px;
+  margin-right: 25%;
+  margin-top: 0;
   width: 200px;
   border-radius: 10%;
   border: 2px solid rgb(76, 90, 76);
@@ -49,7 +49,7 @@ body {
   flex-wrap: wrap;
   display: inline-block;
   justify-content: space-evenly;
-  padding: 9px 80px;
+  padding: 9px 70px;
   background: rgb(41, 87, 19);
   color: rgb(8, 7, 7);
 }
@@ -63,23 +63,24 @@ body {
 a {
   color: #070707;
   text-decoration: none;
-  display: flex;
+  display: inline-flex;
 }
 
 .flexbox-container {
   display: flex;
   justify-content:space-between;
   align-items: flex-start;
+  margin: 4% 9% 0 10%;
 }
 
 main {
   flex-wrap: wrap;
-  display: inline-block;
+  display: block;
   justify-content: space-between;
 }
 
 .section {
-  display: inline-block;
+  display: block;
   flex-wrap: wrap;
   margin-left: 20px;
   padding-right: 10px;
@@ -88,11 +89,28 @@ main {
 section p {
   background-color: rgb(247, 236, 221);
   opacity: 50%;
-  font-family: system-ui;
+  font-family:system-ui;
   color: black;
   font-weight: 600;
   font-size: 20px;
   margin: 5% 15% 15% 5%;
+  text-align: 5px;
+}
+
+aside p {
+  background-color: rgb(247, 236, 221);
+  opacity: 40%;
+  font-family:verdana;
+  color: black;
+  font-weight: 200;
+  font-size: 18px;
+  margin: 5% 15% 15% 5%;
+  border-radius: 5px;
+}
+
+aside img {
+margin: 15px;
+justify-content: space-between;
 }
 
 h2 {
@@ -115,7 +133,7 @@ form {
   color:rgb(247, 236, 221);
 }
 
-h3 {
+.foot-link {
   display: flex;
   position: relative;
   justify-content: center;
@@ -128,13 +146,13 @@ h3 {
     opacity: inherit;
   }
   nav {
-    display: flow-root;
+    flex-direction: row;
   }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     opacity: inherit;
-    display: grid;
+    flex-direction: row;
   }
 }
