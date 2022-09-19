@@ -7,8 +7,6 @@
   background-image: url(../images/meadow.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
 body {
@@ -40,17 +38,18 @@ body {
 
 .nav {
   display: flex;
-  margin-left: 20%;
+  margin-left: 10%;
   font-family: fantasy;
   font-size: large;
   column-gap: 20px;
 }
 
-.nav-item {
+
+.nav li {
   flex-wrap: wrap;
   display: inline-block;
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 9px 80px;
   background: rgb(41, 87, 19);
   color: rgb(8, 7, 7);
 }
@@ -61,26 +60,33 @@ body {
   text-decoration: none;
 }
 
-main {
-  display: block;
-  flex-wrap: wrap;
-  margin-top: 0;
-}
-
 a {
   color: #070707;
   text-decoration: none;
   display: flex;
 }
 
-.section {
-  display: inline-flex;
+.flexbox-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-start;
+}
+
+main {
   flex-wrap: wrap;
-  padding: 15%;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.section {
+  display: inline-block;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  padding-right: 10px;
 }
 
 section p {
-  background-color: rgb(236, 247, 233);
+  background-color: rgb(247, 236, 221);
   opacity: 50%;
   font-family: system-ui;
   color: black;
@@ -94,14 +100,26 @@ h2 {
   color: aliceblue;
 }
 
+.h2 {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+padding: 30px 10% ;
+}
+
+
 form {
-  justify-content: center; 
+  display: block;
+  font-family: system-ui;
+  font-size: medium;
+  color:rgb(247, 236, 221);
 }
 
 h3 {
   display: flex;
   position: relative;
   justify-content: center;
+  color: rgb(247, 236, 221);
 }
 
 
@@ -109,10 +127,14 @@ h3 {
   header {
     opacity: inherit;
   }
+  nav {
+    display: flow-root;
+  }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     opacity: inherit;
+    display: grid;
   }
 }
