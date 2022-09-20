@@ -1,3 +1,4 @@
+/*background setting*/
 :root {
   box-sizing: border-box;
   margin: 0px;
@@ -9,12 +10,14 @@
   background-size: cover;
 }
 
+/*font style and font size*/
 body {
   font-family: system-ui;
   font-weight: 400;
   font-size: small;
 }
 
+/* "hi there"content style setting*/
 .hero {
   color: rgb(19, 53, 3);
   display: flex;
@@ -22,6 +25,7 @@ body {
   margin-left: 15%;
 }
 
+/*special word set italic*/
 .hero-font {
   color: rgb(247, 236, 221);
 }
@@ -31,7 +35,7 @@ body {
   float: right;
   margin-right: 25%;
   margin-top: 0;
-  width: 200px;
+  width: 250px;
   border-radius: 10%;
   border: 2px solid rgb(76, 90, 76);
 }
@@ -43,7 +47,6 @@ body {
   font-size: large;
   column-gap: 20px;
 }
-
 
 .nav li {
   flex-wrap: wrap;
@@ -58,8 +61,10 @@ body {
   background-color: rgb(42, 134, 81);
   font-size: 20px;
   text-decoration: none;
+  color: aqua;
 }
 
+/*all of the link setting*/
 a {
   color: #070707;
   text-decoration: none;
@@ -68,7 +73,7 @@ a {
 
 .flexbox-container {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 4% 9% 0 10%;
 }
@@ -89,7 +94,7 @@ main {
 section p {
   background-color: rgb(247, 236, 221);
   opacity: 50%;
-  font-family:system-ui;
+  font-family: system-ui;
   color: black;
   font-weight: 600;
   font-size: 20px;
@@ -97,20 +102,26 @@ section p {
   text-align: 5px;
 }
 
+/*project img and header setting*/
+section div {
+  display: flex;
+  margin: 10px;
+}
+
 aside p {
   background-color: rgb(247, 236, 221);
   opacity: 40%;
-  font-family:verdana;
+  font-family: verdana;
   color: black;
   font-weight: 200;
   font-size: 18px;
-  margin: 5% 15% 15% 5%;
+  margin: 5% 15% 5% 5%;
   border-radius: 5px;
 }
 
 aside img {
-margin: 15px;
-justify-content: space-between;
+  margin: 15px;
+  justify-content: space-between;
 }
 
 h2 {
@@ -119,18 +130,32 @@ h2 {
 }
 
 .h2 {
-display: flex;
-justify-content: center;
-align-items: flex-start;
-padding: 30px 10% ;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 10%;
 }
 
+h2 p {
+  font-family: system-ui;
+  font-size: 15px;
+  opacity: 90%;
+  width: 100px;
+}
+
+/*Added Pseudo-Elements*/
+h2 p::after {
+  font-family: Impact;
+  content: '\21F2';
+  color: #404640;
+  margin-right: 10px;
+}
 
 form {
   display: block;
   font-family: system-ui;
   font-size: medium;
-  color:rgb(247, 236, 221);
+  color: rgb(247, 236, 221);
 }
 
 .foot-link {
@@ -140,13 +165,19 @@ form {
   color: rgb(247, 236, 221);
 }
 
-
+/*media quary setting*/
 @media screen and (max-width: 992px) {
   header {
     opacity: inherit;
   }
-  nav {
-    flex-direction: row;
+
+  nav li {
+    flex-direction: column;
+    padding: 9px 30px;
+  }
+
+  img {
+    width: 90%;
   }
 }
 
@@ -154,5 +185,14 @@ form {
   nav {
     opacity: inherit;
     flex-direction: row;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  nav li {
+    flex-direction: column;
+    padding: 9px 20px;
   }
 }
